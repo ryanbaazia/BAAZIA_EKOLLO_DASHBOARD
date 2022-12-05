@@ -1,5 +1,68 @@
 .grapho
 {
-    border: solid;
-   
+    /* border: solid; */
+    width: 20%;
+    height: 20%;
+    margin: 0px;
+}
+
+.widget3
+{
+
+    width: 43%;
+    height: 13%;
+    background-color: #3380FF;
+    border-radius: 1.4rem;
+    margin: 20px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    /*box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+   */
+
+}
+.ImgCrypto
+{
+    /* border: solid; */
+}
+.nameCry
+{
+    color: white;
+    text-align: start;
+    margin-top: 12px;
+    margin-bottom: 0px;
+
+}
+.symbCry
+{
+    color: white;
+    text-align: start;
+    margin-top: 8px;
+
+}
+.InfoCry
+{
+    /* border: solid; */
+}
+.Prix
+{
+    /* border:solid; */
+    margin-left: 10px;
+}
+.currentPrice
+{
+    color: rgb(24, 232, 38);
+    text-align: start;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+
+}
+.change
+{
+    color: rgb(24, 232, 38);
+    text-align: start;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+
 }

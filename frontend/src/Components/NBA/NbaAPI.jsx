@@ -4,6 +4,11 @@ import "../Meteo/Forecast.css";
 import NbaWidget from "./NbaWidget";
 import "./Nba.css"
 
+ var today = new Date();
+ const anne = today.getFullYear();
+ const mois = today.getMonth()+1;
+ const jour = today.getDate()-1;
+ const requete = "https://www.balldontlie.io/api/v1/games?dates[]=" + anne +"-"+mois + "-" +jour;
 
 class NbaAPI extends React.Component {
     constructor(props) {
@@ -14,9 +19,10 @@ class NbaAPI extends React.Component {
         items: []
       };
     }
+    
   
     componentDidMount() {
-      fetch("https://www.balldontlie.io/api/v1/games?dates[]=2022-11-30")
+      fetch(requete)
         .then(res => res.json())
         .then(
           (result) => {
@@ -51,6 +57,7 @@ class NbaAPI extends React.Component {
        console.log("NBA->");
        console.log(datas.data);
        console.log("<-NBA");
+       console.log("requete",requete);
        
       const test = "LAC";
       

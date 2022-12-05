@@ -4,8 +4,10 @@
     border-radius: 5%;
     background-color: #fcfcfc;
     width: 30%;
-    height: 40%;
+    height: 35%;
     margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    /*box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;*/
   }
 
   .match
@@ -48,3 +50,4 @@
     margin-top: 0px;
     font-weight: bold;
   }
+

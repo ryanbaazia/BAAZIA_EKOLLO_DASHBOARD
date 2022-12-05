@@ -30,7 +30,7 @@ class CryptoAPI extends React.Component {
     }
 
     componentDidMount() {
-        fetch("https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=eur&days=7&interval=daily")
+        fetch("https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=eur&days=7&interval=daily")
             .then(res => res.json())
             .then(
                 (result) => {

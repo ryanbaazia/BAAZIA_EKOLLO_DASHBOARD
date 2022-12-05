@@ -8,7 +8,11 @@ import Topbar from '../Topbar/Topbar';
 import Forecast from '../Meteo/Forecast';
 import NbaAPI from '../NBA/NbaAPI';
 import CryptoAPI from '../Crypto/CryptoAPI';
+import CryptoAPI2 from '../Crypto/CryptoAPI2';
 import GrapheCrypto from '../Crypto/GrapheCrypto'
+import NewsAPI from '../News/NewsAPI';
+import VelibAPI from '../Velib/VelibAPI'
+import AnnivAPI from '../Annivv/Birth';
 
 function DashBoard() {
 
@@ -20,10 +24,15 @@ function DashBoard() {
                 <div className='main'>
                     <Topbar />
                     <div className='widget'>
-                        {/* <Forecast /> */}
-                        {/* <NbaAPI /> */}
-                        {/* <CryptoAPI /> */}
-                        <GrapheCrypto />
+                    <CryptoAPI />
+                    <CryptoAPI2 />
+                        <Forecast />
+                        <NbaAPI />
+                       
+                        <NewsAPI/>
+                        {/* <VelibAPI/> */}
+
+                        <AnnivAPI/>                        
                     </div>
 
 

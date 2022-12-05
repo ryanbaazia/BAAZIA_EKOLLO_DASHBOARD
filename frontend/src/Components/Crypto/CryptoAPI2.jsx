@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import '@progress/kendo-theme-default/dist/all.css';
-import GrapheCrypto from "./GrapheCrypto"
+import GrapheCrypto2 from "./GrapheCrypto2"
 import {
   Chart,
   ChartTitle,
@@ -12,7 +12,7 @@ import {
 } from "@progress/kendo-react-charts";
 
 
-class CryptoAPI extends React.Component {
+class CryptoAPI2 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -23,7 +23,7 @@ class CryptoAPI extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://api.coingecko.com/api/v3/coins/ethereum?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=true")
+    fetch("https://api.coingecko.com/api/v3/coins/bitcoin?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=true")
       .then(res => res.json())
       .then(
         (result) => {
@@ -78,7 +78,7 @@ class CryptoAPI extends React.Component {
               <p className="currentPrice">{datas.market_data.current_price.eur}€</p>
               <p className="change">+{Math.trunc(datas.market_data.price_change_percentage_7d_in_currency.eur)}%</p>
             </div>
-          <GrapheCrypto />
+          <GrapheCrypto2 />
 
         </div>
 
@@ -90,4 +90,4 @@ class CryptoAPI extends React.Component {
   }
 }
 
-export default CryptoAPI;
+export default CryptoAPI2;

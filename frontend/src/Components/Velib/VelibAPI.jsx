@@ -1,10 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Day from "./Day";
-import "./Forecast.css";
-
-const API_URL = "http://api.openweathermap.org/data/2.5/forecast";
-const API_KEY = "768a35a09a1701be84498950a95e7cf5";
 
 class Forecast extends Component {
   constructor(props) {
@@ -17,15 +12,13 @@ class Forecast extends Component {
   callAPI = city => {
     // Call API
     axios
-      .get(`${API_URL}?q=Paris&appid=${API_KEY}&units=metric`)
+      .get(`https://velib-metropole-opendata.smoove.pro/opendata/Velib_Metropole/station_status.json`)
       .then(({ data }) => {
         console.log(data);
         // Recupere uniquement la propriété data
-        const { list } = data;
+      
         // On prend les trois premières heures de chaque jour (donc de 0-3h))
-        const forecast = [list[0]];
-
-        this.setState({ forecast });
+      
       })
       .catch(console.error);
   };
@@ -49,13 +42,7 @@ class Forecast extends Component {
     const { city } = this.props;
     if (!forecast) return <p>Loading...</p>;
     return (
-      
-      <div>
-          {/* render tout le tableau */}
-          {forecast.map((forecastData, index) => {
-            return <Day key={index} data={forecastData} />;
-          })}
-          </div>
+       <p>Velib</p>
     );
   }
 }

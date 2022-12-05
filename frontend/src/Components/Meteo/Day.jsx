@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import "./Day.css";
 import nuageimg from '../../img/nugae.png'
 import Soleilimg from '../../img/soleil.png'
-
+import Wideimg from '../../img/Wind.png'
+import Pluieimg from '../../img/Rain.png'
 class Day extends Component {
   render() {
     const { data } = this.props;
@@ -28,6 +29,7 @@ class Day extends Component {
             src={Soleilimg}
             alt="weather"
           />
+          
           <strong className="temp">{Math.trunc(temp)}°</strong>
         </div>
 
@@ -39,12 +41,12 @@ class Day extends Component {
           </div>
 
           <div className ="duo">
-          <img src={nuageimg} alt="image nuage" className="logoNuage"/>
+          <img src={Wideimg} alt="image nuage" className="logoNuage"/>
           <p>{vent} Km/h</p>
           </div>
 
           <div className ="duo">
-          <img src={nuageimg} alt="image nuage" className="logoNuage"/>
+          <img src={Pluieimg} alt="image nuage" className="logoNuage"/>
           <p>{pluie}%</p>
           </div>
 
