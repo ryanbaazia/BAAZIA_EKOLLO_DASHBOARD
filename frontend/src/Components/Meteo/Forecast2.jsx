@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Day from "./Day";
+import Day2 from "./Day2";
 import "./Forecast.css";
 
 const API_URL = "http://api.openweathermap.org/data/2.5/forecast";
 const API_KEY = "768a35a09a1701be84498950a95e7cf5";
 
-class Forecast extends Component {
+class Forecast2 extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -23,7 +23,7 @@ class Forecast extends Component {
         // Recupere uniquement la propriété data
         const { list } = data;
         // On prend les trois premières heures de chaque jour (donc de 0-3h))
-        const forecast = [list[0]];
+        const forecast = [list[8]];
 
         this.setState({ forecast });
       })
@@ -53,11 +53,11 @@ class Forecast extends Component {
       <div>
           {/* render tout le tableau */}
           {forecast.map((forecastData, index) => {
-            return <Day key={index} data={forecastData} />;
+            return <Day2 key={index} data={forecastData} />;
           })}
           </div>
     );
   }
 }
 
-export default Forecast;
+export default Forecast2;

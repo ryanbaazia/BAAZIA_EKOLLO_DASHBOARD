@@ -3,6 +3,7 @@
     background-color: rgba(255, 255, 255, 0.7);
     width: 100%;
     height: 10%;
+   
 }
 
 .Date {
@@ -14,4 +15,20 @@
     align-items: center;
     color: rgb(0, 0, 0);
     padding-left: 3%;
+    
+}
+
+.horas
+{
+    font-size: 40px;
+    font-weight: 700;
+  
+    margin-top: 7px;
+}
+
+.contHoras
+{
+   
+    align-items: flex-end;
+    margin-left: 20%;
 }

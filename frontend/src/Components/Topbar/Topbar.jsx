@@ -1,5 +1,22 @@
 import React from 'react'
 import './Topbar.css'
+import { ReactDOM } from 'react';
+
+
+function tick() {
+    const element = (
+      <div>
+        <h1>Bonjour, monde !</h1>
+        <h2>Il est {new Date().toLocaleTimeString()}.</h2>
+      </div>
+    );
+    ReactDOM.render(
+      element,
+      document.getElementsByClassName('Date')
+    );
+  }
+  
+  setInterval(tick, 1000);
 
 const Topbar = () => {
 
@@ -11,6 +28,9 @@ const Topbar = () => {
 
             <div className='Date'>
                 Bonjour, aujourd'hui nous sommes le {today.getDate()} {mois[today.getMonth()]} {today.getFullYear()}
+            </div>
+            <div className='contHoras'>
+               <p className='horas'>{today.getHours()}:{today.getMinutes()}</p> 
             </div>
         </div>
     )

@@ -5,7 +5,7 @@ import Soleilimg from '../../img/soleil.png'
 import Wideimg from '../../img/Wind.png'
 import Pluieimg from '../../img/Rain.png'
 import Bad from '../../img/badtime.png'
-class Day extends Component {
+class Day2 extends Component {
   render() {
     const { data } = this.props;
     console.log("1");
@@ -22,36 +22,19 @@ class Day extends Component {
     const pluie = 38;
     console.log(vent);
     return (
-      <div className="day-container">
-        <p className="date" >Aujourd'hui</p>
+      <div className="day-container2">
+        <p className="date" >Demain</p>
 
-        <div className="ImgTemp">
-          <img className="immg"
+        <div className="ImgTemp2">
+          <img className="immg2"
             src={Bad}
             alt="weather"
           />
           
-          <strong className="temp">{Math.trunc(temp)}°</strong>
+          <strong className="temp2">{Math.trunc(temp)}°</strong>
         </div>
 
-        <div className="InfoSup">
-
-          <div className ="duo">
-          <img src={nuageimg} alt="image nuage" className="logoNuage"/>
-          <p>{nuage}%</p>
-          </div>
-
-          <div className ="duo">
-          <img src={Wideimg} alt="image nuage" className="logoNuage"/>
-          <p>{vent} Km/h</p>
-          </div>
-
-          <div className ="duo">
-          <img src={Pluieimg} alt="image nuage" className="logoNuage"/>
-          <p>{pluie}%</p>
-          </div>
-
-        </div>
+       
 
         
 
@@ -60,4 +43,4 @@ class Day extends Component {
   }
 }
 
-export default Day;
+export default Day2;

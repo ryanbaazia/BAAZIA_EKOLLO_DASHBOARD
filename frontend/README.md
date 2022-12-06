@@ -14,3 +14,10 @@ Le dossier src/stories sert de modèle et est a remplacer par vos widgets.
 Vous pourrez supprimer le contenu de ce README et vous l'approprier en y notant les éléments importants de votre projet. Il est très important de bien documenter un projet !
 
 Inspirez-vous des grands repos open sources qui existent sur github. Les informations qui reviennent souvent sont une description du projet (pourquoi, comment...), la maniere de lancer le projet et eventuellement d'y contribuer, une documentation sur des éléments que vous voulez mettre en avant et pour finir les noms des contributeurs.
+
+
+
+Lien du Mock Up : https://www.figma.com/file/1B5LSjziKJjd2g1s1R45T4/Dashboard-Daly-Paper?node-id=0%3A1&t=B82tsdt6GwSSHByL-1
+
+Lien du Trello : https://trello.com/invite/b/IObr3BWR/ATTI95115ea90ec166ec0fcc60671a94277b61E71327/dashboard-daly-paper
+

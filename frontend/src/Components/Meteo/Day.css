@@ -9,6 +9,21 @@
  
   border-radius: 5%;
   background-color: #CBE5F7;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  height: 80%;
+  
+}
+.day-container2 {
+  
+  text-align: center;
+ 
+  border-radius: 5%;
+  background-color: #CBE5F7;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  height: 40%;
+  width: 100%;
   
 }
 
@@ -16,6 +31,14 @@
 {
   vertical-align: middle;
   font-size: 400%;
+  color: #2C6497;
+
+ 
+}
+.temp2
+{
+  vertical-align: middle;
+  font-size: 100%;
   color: #2C6497;
 
  
@@ -36,8 +59,23 @@
   margin-right: 21px;
  
 }
+.immg2
+{
+  max-width: 50px; 
+   height: auto; 
+  vertical-align: middle;
+  margin-right: 12px;
+ 
+}
 
 .ImgTemp
+{
+  
+  border-color: red;
+  vertical-align: middle;
+
+}
+.ImgTemp2
 {
   
   border-color: red;
@@ -48,8 +86,15 @@
 .InfoSup
 {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   margin-top: 30px;
+}
+.InfoSup2
+{
+  display: flex;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  margin-left: 20px;
 }
 
 .duo
@@ -57,6 +102,7 @@
   margin-left: 10px;
   margin-right: 10px;
    width: 4em; 
+   
   /* min-width: 4em; */
 }
 
@@ -69,6 +115,19 @@
 .duo>p
 {
   font-size: 70%;
+  margin-top: 1px;
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+.duo2>img
+{
+   max-width: 12px; 
+   height: auto; 
+}
+
+.duo2>p
+{
+  font-size: 40%;
   margin-top: 1px;
   margin-bottom: 2px;
   font-weight: bold;
