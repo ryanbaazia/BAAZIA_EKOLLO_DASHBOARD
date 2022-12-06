@@ -4,6 +4,7 @@ import nuageimg from '../../img/nugae.png'
 import Soleilimg from '../../img/soleil.png'
 import Wideimg from '../../img/Wind.png'
 import Pluieimg from '../../img/Rain.png'
+import Bad from '../../img/badtime.png'
 class Day extends Component {
   render() {
     const { data } = this.props;
@@ -18,7 +19,7 @@ class Day extends Component {
     const nuage = data.clouds.all;
     const vent = data.wind.speed;
 
-    const pluie = 12;
+    const pluie = 38;
     console.log(vent);
     return (
       <div className="day-container">
@@ -26,7 +27,7 @@ class Day extends Component {
 
         <div className="ImgTemp">
           <img className="immg"
-            src={Soleilimg}
+            src={Bad}
             alt="weather"
           />
           

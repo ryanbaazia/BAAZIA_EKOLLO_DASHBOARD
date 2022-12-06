@@ -23,7 +23,7 @@
 
 .cont
 {
-    border: solid;
+   
     display: flex;
     width: 90% ;
     height: 80%;
@@ -37,6 +37,7 @@
     /* border:solid; */
     width: 50%;
     height: 100%;
+    border-right: solid;
 }
 
 .After
@@ -49,4 +50,16 @@
 .A
 {
     margin-top: 0px;
+}
+
+.auj
+{
+    font-weight: bold;
+    color: red;
+}
+
+.dm
+{
+    font-weight: bold;
+    color: yellowgreen;
 }

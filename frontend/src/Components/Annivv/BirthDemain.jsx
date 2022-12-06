@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "./Birth.css"
-import AnnivAPID from "./BirthDemain";
 
 
  var today = new Date();
  const anne = today.getFullYear();
  const mois = today.getMonth()+1;
- const jour = today.getDate();
+ const jour = today.getDate()+1;
  const requete = `http://localhost:3001/annivs/${anne}-${mois}-${jour}`;
 
-class AnnivAPI extends React.Component {
+class AnnivAPID extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -69,31 +68,10 @@ class AnnivAPI extends React.Component {
       } else {
         return (
 
-           <div className="widget5">
-          
-               
-               <p className="titre"> {title}</p> 
-
-            <div className="cont">
-                <div className="today">
-                    <p className="A">Aujourd'hui</p>
-                    <p className="auj"> {datas.annivs[0].nom} </p>
-                  
-
-
-                </div>
-                <div className="After">
-                  <p className="A">Plus tard</p>
-                     <AnnivAPID/>
-                    
-                 </div>
-            </div>
-
-          
-          </div>
+           <p className="dm">Demain : {datas.annivs[0].nom}</p>
         );
       }
     }
   }
 
-  export default AnnivAPI;
+  export default AnnivAPID;
