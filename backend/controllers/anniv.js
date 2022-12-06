@@ -41,3 +41,21 @@ Annivs.findOne({ "date" : date })
     })
 
 }
+
+
+
+
+exports.deleteOne = (req, res) => {
+    const { nom } = req.params;
+
+    Annivs.deleteOne({ "nom" : nom }).then((annivs) => {
+        res.status(200).json({ 
+            annivs,
+            message: ` ${annivs} deleted !` 
+        });
+    }).catch(() => {
+        res.status(404).json({ 
+            message: "Sportif not found !" 
+        });
+    })
+}

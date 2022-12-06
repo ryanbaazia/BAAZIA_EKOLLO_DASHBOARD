@@ -6,6 +6,7 @@ import '../Meteo/Forecast'
 import Sidebar from '../Sidebar/Sidebar';
 import Topbar from '../Topbar/Topbar';
 import Forecast from '../Meteo/Forecast';
+import Forecast2 from '../Meteo/Forecast2';
 import NbaAPI from '../NBA/NbaAPI';
 import CryptoAPI from '../Crypto/CryptoAPI';
 import CryptoAPI2 from '../Crypto/CryptoAPI2';
@@ -26,11 +27,14 @@ function DashBoard() {
                     <div className='widget'>
                     <CryptoAPI />
                     <CryptoAPI2 />
-                        <Forecast />
+                        
                         <NbaAPI />
+
+                        <Forecast />
+                        <Forecast2 />
                        
                         <NewsAPI/>
-                        {/* <VelibAPI/> */}
+                       
 
                         <AnnivAPI/>                        
                     </div>

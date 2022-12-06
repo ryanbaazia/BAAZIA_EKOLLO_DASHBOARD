@@ -35,12 +35,9 @@ class CryptoAPI2 extends React.Component {
 
           console.log("Crypto");
           console.log(this.state.items);
-          // console.log("Crypto");
-
+         
         },
-        // Note: it's important to handle errors here
-        // instead of a catch() block so that we don't swallow
-        // exceptions from actual bugs in components.
+       
 
         (error) => {
           this.setState({
