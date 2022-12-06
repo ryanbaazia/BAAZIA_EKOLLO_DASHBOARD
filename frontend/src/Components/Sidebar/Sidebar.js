@@ -16,12 +16,12 @@ const Sidebar = () => {
             </div>
 
             <div className='NavBar'>
-                <ul>
+                <ul className=''>
                     <NavLink to="/" >
-                        <li>DASHBOARD</li>
+                        <p>DASHBOARD</p>
                     </NavLink>
                     <NavLink to="/reglage" >
-                        <li>Regalge</li>
+                       <p>REGLAGE</p>
                     </NavLink>
                 </ul>
             </div>
